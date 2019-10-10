@@ -13,19 +13,26 @@ Some reasons for that this book does not teach AWT or Swing:
 3. JavaFX is the GUI library is the one that is being actively developed by Oracle. Swing will not get any further updates.  
 
 ## 14.3 ##
-A JavaFX main class is defined by extending the Application class.  
+Q1: How do you define a JavaFX main class? 
+A1: A JavaFX main class is defined by extending the Application class.  
 ```Java  
 public class MyJavaFX extends Application  
 ```  
-The signature of the start method in the application class is:  
+Q2: What is the signature of the start method?
+A2: The signature of the start method in the application class is:  
 ```Java  
 public void start(Stage primaryStage)
 ```  
-A Stage is a construct that functions as a base window for JavaFX content. An application can have multiple Stages.
+Q3: What is a stage?
+A3: A Stage is a construct that functions as a base window for JavaFX content. An application can have multiple Stages.
 
-A Stage object called primary stage is automatically created by the JVM when the application is launched.
+Q4: What is a primary stage?
 
-A Stage object is displayed by invoking the show method.    
+Q5: Is a primary stage automatically created?
+A5: A Stage object called primary stage is automatically created by the JVM when the application is launched.
+
+Q6: How do you display a stage?
+A6: A Stage object is displayed by invoking the show method.    
 ```Java  
 Stage stage = new Stage();  
   
@@ -35,12 +42,13 @@ Stage stage = new Stage();
 
 stage.show();  
 ```  
-It is possible to prevent the user from resizing a stage.
+Q7: Can you prevent the user from resizing the stage? 
+A7: It is possible to prevent the user from resizing a stage.
 ```Java  
 stage.setResizable(false);  
 ```  
-
-The instruction `Application.launch(args)` is needed in development environments with limited support for JavaFX. This can be replaced by `launch(args)`, because the JavaFX main class is a subtype of Application.  
+Q8: Can you replace Application.launch(args) by launch(args) in line 22 in Listing 14.1?
+A8: The instruction `Application.launch(args)` is needed in development environments with limited support for JavaFX. This can be replaced by `launch(args)`, because the JavaFX main class is a subtype of Application.  
 
 ## 14.4 ##
 The output of the program in this exercise is:  
