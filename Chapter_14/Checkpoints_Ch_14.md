@@ -27,6 +27,7 @@ Q3: What is a stage?
 A3: A Stage is a construct that functions as a base window for JavaFX content. An application can have multiple Stages.
 
 Q4: What is a primary stage?
+A4: A Stage object called primary stage is automatically created by the JVM when the application is launched.
 
 Q5: Is a primary stage automatically created?
 A5: A Stage object called primary stage is automatically created by the JVM when the application is launched.
